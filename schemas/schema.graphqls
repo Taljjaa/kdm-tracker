@@ -1,0 +1,91 @@
+type Character {
+    id: ID!
+    name: String!
+    gender: Gender!
+    xp: Int!
+    weaponProfType: WeaponProficiencies
+    weaponProfLevel: Int!
+    insanity: Int!
+    survival: Int!
+    speed: Int!
+    understanding: Int!
+    courage: Int!
+    accuracy: Int!
+    movement: Int!
+    evasion: Int!
+    strength: Int!
+    luck: Int!
+    courageType: CourageType
+    understandingType: UnderstandingType
+    armorSetType: ArmorSetType
+    fightingArts: [FightingArts!]!
+    disorders: [Disorders!]!
+    injuries: [Injuries!]!
+}
+
+// most of these enums will end up as types with attributes
+enum Injuries {
+    // fill out 
+}
+
+enum Disorders {
+    // fill out
+}
+
+enum FightingArts {
+    // fill out
+}
+
+enum ArmorSetType {
+    RAWHIDE
+    LEATHER
+    WHITE LION
+    BRAWLER
+    CYCLOID SCALE
+    DANCER
+    DRAGON
+    GREEN
+    GOURMENT
+    LANTERN
+    PHOENIX
+    ROLLING
+    SCREAMING
+    SILK
+    VAGABOND
+    WARLORD
+}
+
+enum UnderstandingType {
+    TINKER
+    ANALYZE
+    EXPLORE
+}
+
+enum CourageType {
+    STALWART
+    PREPARED
+    MATCHMAKER
+}
+
+enum Gender {
+    M
+    F
+    X
+}
+
+enum WeaponProficiencies {
+    KATAR
+    SWORD
+    AXE
+    BOW
+    FIST AND TOOTH
+    SPEAR
+    GRAND WEAPON
+    TWILIGHT SWORD 
+    DAGGER
+    CLUB
+    KATANA
+    SCYTHE
+    SHIELD
+    WHIP
+}
